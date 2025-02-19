@@ -1,12 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { mainData } from './data/main';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule],
+  styles: ["body { position:relative }"]
 })
-export class AppComponent {
-  title = 'web-ubs';
+export class AppComponent implements OnInit {
+  
+  data = mainData;
+
+  ngOnInit(): void {
+    //throw new Error('Method not implemented.');
+  }
+
+
 }

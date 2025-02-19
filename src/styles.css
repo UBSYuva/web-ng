@@ -1653,7 +1653,7 @@ body {
 }
 
 .service-details-inner-left {
-	background-image: url('../public/img/signup-bg.jpg");
+	background-image: url('../public/img/signup-bg.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;

@@ -7,18 +7,13 @@
             <div class="row">
                 <div class="col-12 d-flex">
                     <div class="logo w-25">
-                        <img class="logo-img zoom" src="img/logo-new.jpg">
+                        <img class="logo-img zoom" [src]="data.logoLeft">
                     </div>
-                    <div class="main-label justify-content-center">શ્રી ઉનેવાળ બ્રહ્મસમાજ સેવા ટ્રસ્ટ</div>
+                    <div class="main-label justify-content-center">{{data.header}}</div>
                     <div class="logo w-25 justify-content-end pr-2">
-                        <img class="logo-img-right" src="img/logo-mahakal.jpg">
+                        <img class="logo-img-right" src="{{data.logoRight}}">
                     </div>
                 </div>
-                <!-- <div class="col-2">
-                <div class="logo-right">
-                    <img class="logo-img" src="img/logo-new.jpg">
-                </div>
-            </div> -->
             </div>
         </div>
         <!-- End Topbar -->
@@ -31,31 +26,16 @@
                             <div class="main-menu">
                                 <nav class="navigation">
                                     <ul class="nav menu">
-                                        <li><a href="#home">Home</a></li>
-                                        <li><a href="javascript:void(0)">2025<i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="#upcoming">આવનાર પ્રસંગો</a></li>
+                                        <li *ngFor="let item of data.menuItems">
+                                            <a href="{{ !!item.ref ? item.ref : 'javascript:void(0)'}}">{{item.value}}
+                                                <i *ngIf="!!item.subMenuItems" class="icofont-rounded-down"></i>
+                                            </a>
+                                            <ul *ngIf="!!item.subMenuItems" class="dropdown">
+                                                <li *ngFor="let subItem of item.subMenuItems">
+                                                    <a [href]="subItem.ref">{{subItem.value}}</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li><a href="javascript:void(0)">2024<i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="#navratri2024">નવરાત્રી મહોત્સવ</a></li>
-                                                <li><a href="#cricket2024">ક્રિકેટ ટુર્નામેન્ટ</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:void(0)">2023<i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="#navratri2023">નવરાત્રી મહોત્સવ</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:void(0)">2022<i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="#patotsav2022">પાટોત્સવ</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#highlights">ફોટો અને વિડિઓ ગેલેરી</a> </li>
-                                        <li><a href="#contactus">સંપર્ક કરો</a></li>
-                                        <li><a href="#aboutus">અમારા વિશે</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -89,7 +69,7 @@
                             </div>
                         </div>
                         <div class="col-6 img-dashboard">
-                            <img class="slider-img h-100" src="/img/Patotsav_vadodara_2025.jpeg"/>
+                            <img class="slider-img h-100" src="/img/Patotsav_vadodara_2025.jpeg" />
                         </div>
                     </div>
                 </div>
@@ -1027,5 +1007,5 @@
         </div>
 
     </footer>
-    <!--/ End Footer Area -->   
+    <!--/ End Footer Area -->
 </div>
