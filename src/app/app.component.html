@@ -52,133 +52,21 @@
     <section class="slider">
         <div class="hero-slider">
             <!-- Start Single Slider -->
-            <div class="single-slider">
+            <div *ngFor="let item of data.mainSlider" class="single-slider">
                 <div class="container">
                     <div class="row">
                         <div class="col-6 d-flex">
                             <div class="text">
-                                <h1>માતાજીની નવચંડી, વડોદરા</h1>
-                                <h4 class="pt-2">તા. 20/04/2025</h4>
+                                <h1>{{item.header}}</h1>
+                                <h4 class="pt-2" *ngIf="item.subHeader">{{item.subHeader}}</h4>
                                 <div class="info-slider">
-                                    <p>
-                                        શ્રી ઉનેવાળ સમાજનું સ્નેહ મિલન(2025) તથા યજ્ઞોપવિત અને નવચંડી 20 એપ્રિલના રોજ
-                                        રાખેલ
-                                        છે.
+                                    <p *ngFor="let p of item.paras" [innerHTML]="p">
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 img-dashboard">
-                            <img class="slider-img h-100" src="/img/Patotsav_vadodara_2025.jpeg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 d-flex">
-                            <div class="text">
-                                <h1>માતાજીની નવચંડી, શુક્લતીર્થ</h1>
-                                <h4 class="pt-2">તા. 12/04/2025</h4>
-                                <div class="info-slider">
-                                    <p>
-                                        શ્રી ઉનેવાળ સમાજની શુક્લતીર્થ ખાતેની(2025) યજ્ઞોપવિત અને
-                                        નવચંડી 12 એપ્રિલના રોજ રાખેલ છે.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 img-dashboard d-none">
-                            <img class="slider-img h-100" src="img/Patotsav_vadodara_2025.jpeg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 d-flex">
-                            <div class="text">
-                                <h1>કનકાઈ માતાનો ઈતિહાસ</h1>
-                                <!-- <h4 class="pt-2">-ઇતિહાસ</h4> -->
-                                <div class="info-slider">
-                                    <p>
-                                        કનકાઈ માતા મંદિર, ગુજરાત, ભારતના ગીર રાષ્ટ્રીય ઉદ્યાનમાં આવેલું, દેવી કનકાઈ
-                                        માતાને
-                                        સમર્પિત એક આદરણીય હિન્દુ મંદિર છે.
-                                        મંદિરની ઉત્પત્તિ સ્થાનિક દંતકથાઓ અને ઐતિહાસિક અહેવાલોથી ભરપૂર છે.
-                                    </p>
-                                    <p class="pt-2">
-                                        <b>ઐતિહાસિક પૃષ્ઠભૂમિ:</b>
-                                        સ્થાનિક માન્યતા મુજબ, કનકાઈ શહેરની સ્થાપના રાજા કનક ચાવડાએ 8મી સદીમાં કરી હતી,
-                                        જેમાં દેવી કનકાઈ નગરના પ્રમુખ દેવતા તરીકે સ્થાપિત થઈ હતી.
-                                    </p>
-                                    <p class="pt-2">
-                                        અન્ય એક દંતકથા મંદિરની ઉત્પત્તિને એક સમર્પિત અનુયાયી દ્વારા અનુભવાયેલી દૈવી
-                                        દ્રષ્ટિને આભારી છે, જે દેવી દ્વારા આશીર્વાદિત હોવાનું માનવામાં આવતા સ્થળ પર
-                                        તેનું
-                                        બાંધકામ તરફ દોરી જાય છે.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 img-dashboard">
-                            <img class="slider-img h-100" src="img/kankai-gir.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 d-flex">
-                            <div class="text">
-                                <h1>કનકાઈ મંદિર - પરીવાહન</h1>
-                                <!-- <h4 class="pt-2">-પરિવહન</h4> -->
-                                <div class="info-slider">
-                                    <p>
-                                        જૂનાગઢથી દરરોજ સવારે 8 વાગ્યે ઉપડતી બસ છે, મંદિરમાં એક કલાક રોકાય છે અને સવારે
-                                        9:45 વાગ્યે પરત ફરવા માટે રવાના થાય છે.
-                                    </p>
-                                    <p>
-                                        માર્ગ દ્વારા: ગીર રાષ્ટ્રીય ઉદ્યાન જૂનાગઢથી 60 કિમી દૂર છે, જે મુલાકાત લેવા
-                                        માટેનું સૌથી સામાન્ય સ્થળ છે, અને અમદાવાદથી 360 કિમી દૂર છે. મુખ્ય કેન્દ્ર સાસણ
-                                        ગીર છે જ્યાં રેલ્વે સ્ટેશનની સામે વન વિભાગ દ્વારા જાળવવામાં આવેલું ફોરેસ્ટ ગેસ્ટ
-                                        હાઉસ છે. સાસણ તેમજ નજીકના સ્થળોએ હોટલ અને ગેસ્ટ-હાઉસ છે. મંદિરમાં ખાનગી વાહનો
-                                        દ્વારા પહોંચી શકાય છે. સ્થળની
-                                        મુલાકાત લેવા માટે સ્થાનિક ટેક્સી ભાડે લેવી વધુ સારું છે.
-                                    </p>
-                                    <p>
-                                        હવાઈ માર્ગ: નજીકનું એરપોર્ટ રાજકોટ છે પરંતુ તે ભારતના મુખ્ય એરપોર્ટ સાથે સારી
-                                        રીતે જોડાયેલ નથી, તેથી યોગ્ય એરપોર્ટ અમદાવાદ છે. અમદાવાદથી ટ્રેન કે વાહન દ્વારા
-                                        જઈ શકાય છે. કંકાઈમાં મોટાભાગના દિવસોમાં વાતાવરણ હળવું રહે છે.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 img-dashboard">
-                            <img class="slider-img h-100" src="img/kankai-gir-1.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 d-flex">
-                            <div class="text">
-                                <h1>કનકાઈ મંદિર</h1>
-                                <h4 class="pt-2">-શુક્લતીર્થ</h4>
-                                <div class="info-slider">
-                                    <p>
-                                        ॐ कुलदेवीये च विधमहे | गीरवासिनी च धीमही। तन्नो कनके प्रचोदयात ||
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 img-dashboard">
-                            <img class="slider-img" src="img/Kankai-Shuklatirth.jpg">
+                            <img class="slider-img h-100" *ngIf="!!item.img" [src]="item.img" />
                         </div>
                     </div>
                 </div>
@@ -192,24 +80,13 @@
     <div id="fun-facts" class="fun-facts section overlay">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12" *ngFor="let c of data.facts">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
                         <i class="icofont icofont-home"></i>
                         <div class="content">
-                            <span class="counter">1989</span>
-                            <p>સ્થાપના વર્ષ 10/09/1989</p>
-                        </div>
-                    </div>
-                    <!-- End Single Fun -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Fun -->
-                    <div class="single-fun">
-                        <i class="icofont icofont-user-alt-3"></i>
-                        <div class="content">
-                            <span class="counter">849</span>
-                            <p>સમાજ ના કુલ સભાસદો</p>
+                            <span class="counter">{{c.counter}}</span>
+                            <p>{{c.info}}</p>
                         </div>
                     </div>
                     <!-- End Single Fun -->
