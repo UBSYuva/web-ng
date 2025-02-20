@@ -269,7 +269,7 @@
                 <div class="col-12">
                     <div class="contact-us-form">
                         <h2>{{data.aboutus.header}}</h2>
-                        <h5 class="pt-3" *ngOf="let header of data.aboutus.subHeaders">
+                        <h5 class="pt-3" *ngFor="let header of data.aboutus.subHeaders">
                             {{header}}
                         </h5>
                     </div>
