@@ -11,12 +11,11 @@ if (environment.production) {
 
 const appConfig = new AppConfig();
 appConfig.applicationInsight = {
-    instrumentationKey: "instrumentationKey",
-    app: "Wizmo Portal"
+  instrumentationKey: "instrumentationKey",
+  app: "Wizmo Portal"
 }
 
-platformBrowserDynamic([{ provide: APP_CONFIG, useValue: appConfig }])
-    .bootstrapModule(AppModule).catch(err => console.error(err));
+// platformBrowserDynamic([{ provide: APP_CONFIG, useValue: appConfig }]).bootstrapModule(AppModule).catch(err => console.error(err));
 
 //fetch("api/configuration/web").then( async res =>{
 //  const appConfig =  await res.json();
