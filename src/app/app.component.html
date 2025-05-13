@@ -9,14 +9,17 @@
                     <div class="logo w-25">
                         <img class="logo-img zoom" [src]="data.logoLeft">
                     </div>
-                    <div class="main-label justify-content-center">{{data.header}}</div>
+                    <div class="main-label justify-content-center">
+                        {{ data.header }}
+                    </div>
                     <div class="logo w-25 justify-content-end pr-2">
-                        <img class="logo-img-right" src="{{data.logoRight}}">
+                        <img class="logo-img-right" src="{{ data.logoRight }}">
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Topbar -->
+
         <!-- Header Inner -->
         <div class="header-inner">
             <div class="container">
@@ -27,12 +30,15 @@
                                 <nav class="navigation">
                                     <ul class="nav menu">
                                         <li *ngFor="let item of data.menuItems">
-                                            <a href="{{ !!item.ref ? item.ref : 'javascript:void(0)'}}">{{item.value}}
+                                            <a href="{{ !!item.ref ? item.ref : 'javascript:void(0)' }}">
+                                                {{ item.value }}
                                                 <i *ngIf="!!item.subMenuItems" class="icofont-rounded-down"></i>
                                             </a>
                                             <ul *ngIf="!!item.subMenuItems" class="dropdown">
                                                 <li *ngFor="let subItem of item.subMenuItems">
-                                                    <a [href]="subItem.ref">{{subItem.value}}</a>
+                                                    <a [href]="subItem.ref">
+                                                        {{ subItem.value }}
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -44,8 +50,9 @@
                 </div>
             </div>
         </div>
-        <!--/ End Header Inner -->
+        <!-- End Header Inner -->
     </header>
+
     <!-- End Header Area -->
 
     <!-- Slider Area -->
