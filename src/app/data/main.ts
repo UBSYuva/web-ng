@@ -7,7 +7,7 @@ export const mainData = {
         {
             value: "2025",
             subMenuItems: [
-                { ref: "#upcoming", value: "આવનાર પ્રસંગો" },
+                // { ref: "#upcoming", value: "આવનાર પ્રસંગો" },
                 { ref: "#patotsav2025", value: "પાટોત્સવ" }
             ]
         },
@@ -32,22 +32,8 @@ export const mainData = {
     ],
     mainSlider: [
         {
-            header: "માતાજીની નવચંડી, વડોદરા",
-            subHeader: "તા. 20/04/2025",
-            paras: [
-                "શ્રી ઉનેવાળ સમાજનું સ્નેહ મિલન(2025) તથા યજ્ઞોપવિત અને નવચંડી 20 એપ્રિલના રોજ રાખેલ છ.",
-            ],
-            img: "/img/Patotsav_vadodara_2025.jpeg"
-        },
-        {
-            header: "માતાજીની નવચંડી, શુક્લતીર્થ",
-            subHeader: "તા. 12/04/2025",
-            paras: [
-                " શ્રી ઉનેવાળ સમાજની શુક્લતીર્થ ખાતેની(2025) યજ્ઞોપવિત અને નવચંડી 12 એપ્રિલના રોજ રાખેલ છે.",
-            ],
-        },
-        {
             header: "કનકાઈ માતાનો ઈતિહાસ",
+            subHeader: "કનકાઈ માતા મંદિર, ગીર રાષ્ટ્રીય ઉદ્યાન",
             paras: [
                 "કનકાઈ માતા મંદિર, ગુજરાત, ભારતના ગીર રાષ્ટ્રીય ઉદ્યાનમાં આવેલું, દેવી કનકાઈ માતાને સમર્પિત એક આદરણીય હિન્દુ મંદિર છે. મંદિરની ઉત્પત્તિ સ્થાનિક દંતકથાઓ અને ઐતિહાસિક અહેવાલોથી ભરપૂર છે.",
                 "<b>ઐતિહાસિક પૃષ્ઠભૂમિ:</b> સ્થાનિક માન્યતા મુજબ, કનકાઈ શહેરની સ્થાપના રાજા કનક ચાવડાએ 8મી સદીમાં કરી હતી,જેમાં દેવી કનકાઈ નગરના પ્રમુખ દેવતા તરીકે સ્થાપિત થઈ હતી.",
@@ -57,6 +43,7 @@ export const mainData = {
         },
         {
             header: "કનકાઈ મંદિર - પરીવાહન",
+            subHeader: "કનકાઈ મંદિરની મુલાકાત લેવાની રીત",
             paras: [
                 "જૂનાગઢથી દરરોજ સવારે 8 વાગ્યે ઉપડતી બસ છે, મંદિરમાં એક કલાક રોકાય છે અને સવારે 9:45 વાગ્યે પરત ફરવા માટે રવાના થાય છે.",
                 "માર્ગ દ્વારા: ગીર રાષ્ટ્રીય ઉદ્યાન જૂનાગઢથી 60 કિમી દૂર છે, જે મુલાકાત લેવા માટેનું સૌથી સામાન્ય સ્થળ છે, અને અમદાવાદથી 360 કિમી દૂર છે. મુખ્ય કેન્દ્ર સાસણ ગીર છે જ્યાં રેલ્વે સ્ટેશનની સામે વન વિભાગ દ્વારા જાળવવામાં આવેલું ફોરેસ્ટ ગેસ્ટ હાઉસ છે. સાસણ તેમજ નજીકના સ્થળોએ હોટલ અને ગેસ્ટ-હાઉસ છે. મંદિરમાં ખાનગી વાહનો દ્વારા પહોંચી શકાય છે. સ્થળની મુલાકાત લેવા માટે સ્થાનિક ટેક્સી ભાડે લેવી વધુ સારું છે.",
@@ -66,6 +53,7 @@ export const mainData = {
         },
         {
             header: "કનકાઈ મંદિર - શુક્લતીર્થ",
+            subHeader: "",
             paras: [
                 "ॐ कुलदेवीये च विधमहे | गीरवासिनी च धीमही। तन्नो कनके प्रचोदयात ||"
             ],
@@ -106,34 +94,40 @@ export const mainData = {
                 {
                     type: "image",
                     data: [
-                        "../../img/patotsav-2025/patotsav-2025 (1).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (2).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (3).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (4).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (5).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (6).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (7).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (8).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (9).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (10).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (11).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (12).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (13).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (14).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (15).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (16).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (17).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (18).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (19).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (20).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (21).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (22).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (23).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (24).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (25).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (26).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (27).jpg",
-                        "../../img/patotsav-2025/patotsav-2025 (28).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (7).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (1).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (8).jpg",
+                        "../../img/patotsav-2025/navchandi_other.jpg",
+                        "../../img/patotsav-2025/2025-navchandi (2).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (3).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (4).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (5).jpg",                        
+                        "../../img/patotsav-2025/2025-navchandi (6).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (10).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (11).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (12).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (13).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (14).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (15).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (16).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (17).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (18).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (19).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (20).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (21).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (22).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (23).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (24).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (25).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (26).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (27).jpg",
+                        "../../img/patotsav-2025/2025-navchandi (28).jpg",
+                    ]
+                },
+                {
+                    type: "video",
+                    data: [
+                       "../../img/patotsav-2025/memory_moment.mp4",                        
                     ]
                 }
             ],
@@ -301,15 +295,24 @@ export const mainData = {
                 { position: 'પ્રમુખ', name: 'ઉર્વેશ પુરોહિત' },
                 { position: 'ઉપપ્રમુખ', name: 'આશિષ પાઠક' },
                 { position: 'મહામંત્રી', name: 'કેયુર ભટ્ટ' },
-                { position: 'સહમંત્રી', name: 'નિખિલ ભટ્ટ' },
+                { position: 'સહમંત્રી', name: 'નિકુલ ભટ્ટ' },
                 { position: 'ખજાનચી', name: 'જયદેવ શુક્લ' },
-                { position: 'કારોબારી', name: 'ઋષિ ઠાકર' },
+                { position: 'કારોબારી', name: 'રીશી ઠાકર' },
                 { position: 'કારોબારી', name: 'અજય ભટ્ટ' },
-                { position: 'કારોબારી', name: 'ઉર્વેશ પુરોહિત' },
-                { position: 'કારોબારી', name: 'ઉર્વેશ પુરોહિત' },
-                { position: 'કારોબારી', name: 'ઉર્વેશ પુરોહિત' },
-                { position: 'કારોબારી', name: 'ઉર્વેશ પુરોહિત' },
-                { position: 'કારોબારી', name: 'ઉર્વેશ પુરોહિત' },
+                { position: 'કારોબારી', name: 'નિમેષ પુરોહિત' },
+                { position: 'કારોબારી', name: 'હેમદીપ ભટ્ટ' },
+                { position: 'કારોબારી', name: 'રોહન પુરોહિત' },
+                { position: 'કારોબારી', name: 'ઋષિ પુરોહિત' },
+                { position: 'કારોબારી', name: 'પાર્થ જોષી' },
+                { position: 'કારોબારી', name: 'પાર્થ મહેતા' },
+                { position: 'કારોબારી', name: 'હ્રુત્વિક ઠાકર' },
+                { position: 'કારોબારી', name: 'ચિરાગ પુરોહિત' },
+                { position: 'કારોબારી', name: 'રાહુલ ભટ્ટ' },
+                { position: 'કારોબારી', name: 'બાલકૃષ્ણ પાઠક' },
+                { position: 'કારોબારી', name: 'કિશન જોષી' },
+                { position: 'કારોબારી', name: 'યજ્ઞેશ ઉપાધ્યાય' },
+                { position: 'કારોબારી', name: 'નીરવ પુરોહિત' },
+                { position: 'કારોબારી', name: 'હાર્દિક ભટ્ટ' }
             ]
         },
     },

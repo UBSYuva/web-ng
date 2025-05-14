@@ -65,7 +65,7 @@
                         <div class="col-6 d-flex">
                             <div class="text">
                                 <h1>{{item.header}}</h1>
-                                <h4 class="pt-2" *ngIf="item.subHeader">{{item.subHeader}}</h4>
+                                <h4 class="pt-2" *ngIf="item?.subHeader">{{item?.subHeader}}</h4>
                                 <div class="info-slider">
                                     <p *ngFor="let p of item.paras" [innerHTML]="p">
                                     </p>
@@ -283,7 +283,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </section>
 
 
@@ -298,14 +298,14 @@
                             <h2>Follow</h2>
                             <!-- Social -->
                             <ul class="social">
-                                <li><a href="https://www.facebook.com/profile.php?id=61572570989481" target="_blank">
+                                <!-- <li><a href="https://www.facebook.com/profile.php?id=61572570989481" target="_blank">
                                         <i class="icofont-facebook"></i></a>
-                                </li>
-                                <li><a target="_blank" href="https://www.instagram.com/ubs.yuva/">
+                                </li> -->
+                                <li><a target="_blank" href="https://www.instagram.com/ubs.yuva/" title="Instagram">
                                         <i class="icofont-instagram"></i>
                                     </a>
                                 </li>
-                                <li><a href="https://www.youtube.com/@unewadbrahmasamaj-yuva8113" target="_blank">
+                                <li><a href="https://www.youtube.com/@unewadbrahmasamaj-yuva8113" title="Youtube" target="_blank">
                                         <i class="icofont-youtube"></i></a>
                                 </li>
                             </ul>
