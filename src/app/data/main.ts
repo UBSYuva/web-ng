@@ -1,4 +1,4 @@
-export const mainData = {
+export const mainData: any = {
     header: "શ્રી ઉનેવાળ બ્રહ્મસમાજ સેવા ટ્રસ્ટ",
     logoLeft: "img/logo-new.jpg",
     logoRight: "img/logo-mahakal.jpg",
@@ -68,23 +68,23 @@ export const mainData = {
         counter: "849",
         info: "સમાજ ના કુલ સભાસદો"
     }],
-    upcoming: {
-        header: "આવનાર પ્રસંગ - 2025",
-        events: [
-            {
-                header: "નવચંડી, વડોદરા",
-                date: "તા. 20/04/2025",
-                eventInfo: "શ્રી ઉનેવાળ સમાજનું સ્નેહ મિલન(2025) તથા યજ્ઞોપવિત અને નવચંડી 20 એપ્રિલના રોજ રાખેલ છે.",
-                img: "../../img/Patotsav_vadodara_2025.jpeg"
-            },
-            {
-                header: "નવચંડી, શુક્લતીર્થ",
-                date: "તા. 12/04/2025",
-                eventInfo: "શ્રી ઉનેવાળ સમાજની શુક્લતીર્થ ખાતેની(2025) યજ્ઞોપવિત અને નવચંડી 12 એપ્રિલના રોજ રાખેલ છે.",
-                img: "../../img/Patotsav_vadodara_2025.jpeg"
-            }
-        ]
-    },
+    // upcoming: {
+    //     header: "આવનાર પ્રસંગ - 2025",
+    //     events: [
+    //         {
+    //             header: "નવચંડી, વડોદરા",
+    //             date: "તા. 20/04/2025",
+    //             eventInfo: "શ્રી ઉનેવાળ સમાજનું સ્નેહ મિલન(2025) તથા યજ્ઞોપવિત અને નવચંડી 20 એપ્રિલના રોજ રાખેલ છે.",
+    //             img: "../../img/Patotsav_vadodara_2025.jpeg"
+    //         },
+    //         {
+    //             header: "નવચંડી, શુક્લતીર્થ",
+    //             date: "તા. 12/04/2025",
+    //             eventInfo: "શ્રી ઉનેવાળ સમાજની શુક્લતીર્થ ખાતેની(2025) યજ્ઞોપવિત અને નવચંડી 12 એપ્રિલના રોજ રાખેલ છે.",
+    //             img: "../../img/Patotsav_vadodara_2025.jpeg"
+    //         }
+    //     ]
+    // },
     sections: [
         {
             id: "patotsav2025",
