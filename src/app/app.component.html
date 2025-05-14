@@ -254,12 +254,13 @@
                     </div>
                     <div class="contact-us-form">
                         <h3 class="h3-sub">{{data.contactus.volunteers.header}}</h3>
-                        <h5 class="pt-4">{{data.contactus.volunteers.paras}}</h5>
+                        <!-- <h5 class="pt-4">{{data.contactus.volunteers?.paras}}</h5> -->
                         <div class="row pt-4 pl-3">
                             <div class="col-lg-2 col-12 p-2" *ngFor="let member of data.contactus.volunteers.members">
                                 <div class="single-info karyakarta">
                                     <div class="content content-single-info">
-                                        <h3 class="position-absolute pt-3">{{member}}</h3>
+                                        <h3 class="position-absolute pt-3">{{member.name}}</h3>
+                                        <p class="p-contact">{{member.position}}</p>
                                     </div>
                                 </div>
                             </div>

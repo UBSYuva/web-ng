@@ -36,7 +36,7 @@ p {
 }
 
 .img {
-    width: 100% !important;
+    width: auto !important;
     height: 100%;
     /* object-fit: cover; */
 }
@@ -46,6 +46,10 @@ p {
     height: 600px;
     border: 1px solid #000;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cfcfcf;
     /* Optional, hides any overflow */
 }
 
