@@ -226,7 +226,7 @@
                         <div class="contact-info">
                             <div class="row w-100">
                                 <!-- single-info -->
-                                <div class="col-lg-6 col-12 p-1" *ngFor="let cnt of data.contactus.contacts">
+                                <div class="col-12 p-1" *ngFor="let cnt of data.contactus.contacts">
                                     <div class="single-info">
                                         <div class="content content-single-info">
                                             <h3 class="position-absolute pt-3 pl-1">{{cnt.number}}</h3>
@@ -239,33 +239,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-us-form">
-                        <h3 class="h3-sub">{{data.contactus.trustee.header}}</h3>
-                        <div class="row pt-4 pl-3">
-                            <div class="col-lg-2 col-12 p-1" *ngFor="let member of data.contactus.trustee.members">
-                                <div class="single-info">
-                                    <div class="content content-single-info">
-                                        <h3 class="position-absolute pt-3">{{member.name}}</h3>
-                                        <p class="p-contact">{{member.position}}</p>
+                    <ng-container *ngFor="let item of data.contactus.committee">
+                        <div class="contact-us-form">
+                            <h3 class="h3-sub">{{item.header}}</h3>
+                            <div class="row pt-4 pl-3">
+                                <div class="col-lg-2 col-12 p-1" *ngFor="let member of item.members">
+                                    <div class="single-info">
+                                        <div class="content content-single-info">
+                                            <h3 class="position-absolute pt-3">{{member.name}}</h3>
+                                            <p class="p-contact">{{member.position}}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="contact-us-form">
-                        <h3 class="h3-sub">{{data.contactus.volunteers.header}}</h3>
-                        <!-- <h5 class="pt-4">{{data.contactus.volunteers?.paras}}</h5> -->
-                        <div class="row pt-4 pl-3">
-                            <div class="col-lg-2 col-12 p-2" *ngFor="let member of data.contactus.volunteers.members">
-                                <div class="single-info karyakarta">
-                                    <div class="content content-single-info">
-                                        <h3 class="position-absolute pt-3">{{member.name}}</h3>
-                                        <p class="p-contact">{{member.position}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </ng-container>
                 </div>
             </div>
         </div>
@@ -283,7 +271,7 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </section>
 
 
@@ -305,7 +293,8 @@
                                         <i class="icofont-instagram"></i>
                                     </a>
                                 </li>
-                                <li><a href="https://www.youtube.com/@unewadbrahmasamaj-yuva8113" title="Youtube" target="_blank">
+                                <li><a href="https://www.youtube.com/@unewadbrahmasamaj-yuva8113" title="Youtube"
+                                        target="_blank">
                                         <i class="icofont-youtube"></i></a>
                                 </li>
                             </ul>
