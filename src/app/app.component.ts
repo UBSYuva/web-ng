@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   templateUrl: './app.component.html',
   imports: [CommonModule],
-  styles: ["body { position:relative }"]
+  styles: ["body { position:relative }"],
+  styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
   
