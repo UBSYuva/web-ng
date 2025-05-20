@@ -4034,6 +4034,19 @@ body {
 	transition: all .3s ease-out 0s;
 }
 
+.contact-us .primary-info {
+	color: #d32f2f !important;
+	background-color: #d6cdff;
+	height: 80px;
+	border-radius: 10px;
+	position: relative;
+	-webkit-transition: all .3s ease-out 0s;
+	-moz-transition: all .3s ease-out 0s;
+	-ms-transition: all .3s ease-out 0s;
+	-o-transition: all .3s ease-out 0s;
+	transition: all .3s ease-out 0s;
+}
+
 /* .contact-us .single-info:before {
 	position: absolute;
 	z-index: -1;

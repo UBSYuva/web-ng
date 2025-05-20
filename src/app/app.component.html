@@ -153,7 +153,8 @@
                     <div class="col-12">
                         <section class="slider">
                             <button class="p-1 mb-1 fa fa-expand" title="full screen on/off"
-                                id="{{'btnFullScreen_' + section.id}}" [name]="section.id" onclick="enterFullScreen(this.name)"></button>
+                                id="{{'btnFullScreen_' + section.id}}" [name]="section.id"
+                                onclick="enterFullScreen(this.name)"></button>
                             <div class="hero-slider">
                                 <ng-container *ngFor="let glrItem of section.gallery">
                                     <div class="single-slider" *ngFor="let itm of glrItem.data">
@@ -242,21 +243,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <ng-container *ngFor="let item of data.contactus.committee">
-                        <div class="contact-us-form">
-                            <h3 class="h3-sub">{{item.header}}</h3>
-                            <div class="row pt-4 pl-3">
-                                <div class="col-lg-2 col-12 p-1" *ngFor="let member of item.members">
-                                    <div class="single-info">
-                                        <div class="content content-single-info">
-                                            <h3 class="position-absolute pt-5">{{member.name}}</h3>
-                                            <p class="p-contact">{{member.position}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ng-container> -->
                 </div>
             </div>
         </div>
@@ -275,15 +261,35 @@
                     <ng-container *ngFor="let item of data.contactus.committee">
                         <div class="contact-us-form w-100">
                             <h3 class="h3-sub">{{item.header}}</h3>
-                            <div class="row pt-4 pl-3">
-                                <div class="col-lg-2 col-12 p-1" *ngFor="let member of item.members">
-                                    <div class="single-info">
-                                        <div class="content content-single-info">
-                                            <h3 class="position-absolute pt-5">{{member.name}}</h3>
-                                            <p class="p-contact">{{member.position}}</p>
+                            <div class="row pt-4 pl-3 member-list">
+                                <h5 class="w-100 text-center pb-1">પદાધિકારી સભ્યો</h5>
+                                <ng-container *ngFor="let member of item.members">
+                                    <ng-container *ngIf="!!member.isPrimary">
+                                        <div class="col-lg-3 col-12 p-1">
+                                            <div class="primary-info">
+                                                <div class="content content-single-info">
+                                                    <h5 class="position-absolute pt-5">{{member.name}}</h5>
+                                                    <p class="p-contact">{{member.position}}</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </ng-container>
+                                </ng-container>
+                            </div>
+                            <div class="row pt-4 pl-3 member-list">
+                                <h5 class="w-100 text-center pb-1">કારોબારી સભ્યો</h5>
+                                <ng-container *ngFor="let member of item.members">
+                                    <ng-container *ngIf="!member.isPrimary">
+                                        <div class="col-lg-2 col-12 p-1">
+                                            <div class="single-info">
+                                                <div class="content content-single-info">
+                                                    <h3 class="member-padding">{{member.name}}</h3>
+                                                    <!-- <p class="p-contact">{{member.position}}</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+                                </ng-container>
                             </div>
                         </div>
                     </ng-container>

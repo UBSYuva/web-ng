@@ -8,3 +8,15 @@
     display: flex;
     justify-content: center;
 }
+
+.member-list {
+    background-color: #62cdc217;
+    margin: 20px 0 0 0;
+    padding: 0 20px 20px 0;
+
+    border-radius: 15px;
+}
+
+.member-padding {
+    padding-top: 30px !important
+}
