@@ -56,7 +56,7 @@
     <!-- End Header Area -->
 
     <!-- Slider Area -->
-    <section class="slider">
+    <section class="slider pb-1">
         <div class="hero-slider">
             <!-- Start Single Slider -->
             <div *ngFor="let item of data.mainSlider" class="single-slider">
@@ -64,16 +64,16 @@
                     <div class="row">
                         <div class="col-6 d-flex">
                             <div class="text">
-                                <h1>{{item.header}}</h1>
-                                <h4 class="pt-2" *ngIf="item?.subHeader">{{item?.subHeader}}</h4>
+                                <h3>{{item.header}}</h3>
+                                <h5 class="pt-2" *ngIf="item?.subHeader">{{item?.subHeader}}</h5>
                                 <div class="info-slider">
                                     <p *ngFor="let p of item.paras" [innerHTML]="p">
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 img-dashboard">
-                            <img class="slider-img h-100" *ngIf="!!item.img" [src]="item.img" />
+                        <div class="col-6 main-img">
+                            <img class="img" [src]="item.img" />
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
     <!-- Start Fun-facts -->
     <div id="fun-facts" class="fun-facts section overlay">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6 col-12" *ngFor="let c of data.facts">
                     <!-- Start Single Fun -->
                     <div class="single-fun">
@@ -149,11 +149,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="{{'toggle_fullscreen_' + section.id }}">
                     <div class="col-12">
-                        <section class="slider" id="toggle_fullscreen_navratri2024">
+                        <section class="slider">
                             <button class="p-1 mb-1 fa fa-expand" title="full screen on/off"
-                                id="btnFullScreen_navratri2024" onclick="enterFullScreen('section.id')"></button>
+                                id="{{'btnFullScreen_' + section.id}}" [name]="section.id" onclick="enterFullScreen(this.name)"></button>
                             <div class="hero-slider">
                                 <ng-container *ngFor="let glrItem of section.gallery">
                                     <div class="single-slider" *ngFor="let itm of glrItem.data">
@@ -229,7 +229,7 @@
                                 <div class="col-12 p-1" *ngFor="let cnt of data.contactus.contacts">
                                     <div class="single-info">
                                         <div class="content content-single-info">
-                                            <h3 class="position-absolute pt-3 pl-1 text-normal">{{cnt.number}}</h3>
+                                            <h3 class="position-absolute pt-5 pl-1 text-normal">{{cnt.number}}</h3>
                                             <p class="p-contact">
                                                 <i [ngClass]="{'icofont-email': cnt.type== 'email', 'icofont-ui-call': cnt.type== 'mobile' }"
                                                     class="pr-1 icofont position-static">
@@ -249,7 +249,7 @@
                                 <div class="col-lg-2 col-12 p-1" *ngFor="let member of item.members">
                                     <div class="single-info">
                                         <div class="content content-single-info">
-                                            <h3 class="position-absolute pt-3">{{member.name}}</h3>
+                                            <h3 class="position-absolute pt-5">{{member.name}}</h3>
                                             <p class="p-contact">{{member.position}}</p>
                                         </div>
                                     </div>
@@ -268,9 +268,9 @@
                 <div class="col-12">
                     <div class="contact-us-form">
                         <h2>{{data.aboutus.header}}</h2>
-                        <h5 class="pt-3" *ngFor="let header of data.aboutus.subHeaders">
+                        <p *ngFor="let header of data.aboutus.subHeaders">
                             {{header}}
-                        </h5>
+                        </p>
                     </div>
                     <ng-container *ngFor="let item of data.contactus.committee">
                         <div class="contact-us-form w-100">
@@ -279,7 +279,7 @@
                                 <div class="col-lg-2 col-12 p-1" *ngFor="let member of item.members">
                                     <div class="single-info">
                                         <div class="content content-single-info">
-                                            <h3 class="position-absolute pt-3">{{member.name}}</h3>
+                                            <h3 class="position-absolute pt-5">{{member.name}}</h3>
                                             <p class="p-contact">{{member.position}}</p>
                                         </div>
                                     </div>
