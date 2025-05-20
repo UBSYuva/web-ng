@@ -643,7 +643,7 @@ Version:	1.1
 	}
 
 	.header .main-menu {
-		display: none
+		/* display: none */
 	}
 
 	.header .widget-main {
@@ -668,7 +668,7 @@ Version:	1.1
 	}
 
 	.header.style2 .main-menu {
-		display: none;
+		/* display: none; */
 	}
 
 	.header .header-inner .get-quote {
@@ -1335,7 +1335,7 @@ Version:	1.1
 	}
 
 	.section-title {
-		margin-bottom: 5px;
+		margin-bottom: 30px;
 		padding: 0px 20px;
 	}
 
@@ -1465,7 +1465,7 @@ Version:	1.1
 	}
 
 	.fun-facts .single-fun {
-		margin: 5px 0;
+		margin: 35px 0;
 		padding-top: 60px;
 		text-align: center;
 	}

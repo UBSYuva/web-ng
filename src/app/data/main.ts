@@ -26,7 +26,7 @@ export const mainData: any = {
             value: "2022",
             subMenuItems: [{ ref: "#patotsav2022", value: "પાટોત્સવ" }]
         },
-        { ref: "#highlights", value: "ફોટો અને વિડિઓ ગેલેરી" },
+        { ref: "#highlights", value: "હાઈલાઈટ્સ" },
         { ref: "#contactus", value: "સંપર્ક કરો" },
         { ref: "#aboutus", value: "અમારા વિશે" },
     ],
@@ -145,6 +145,7 @@ export const mainData: any = {
             ],
         },
         {
+            id: "navratri2024",
             header: "નવરાત્રી મહોત્સવ 2024",
             subHeader: "ફોટો ગેલેરી",
             gallery: [
@@ -308,6 +309,7 @@ export const mainData: any = {
                     { position: 'ઉપપ્રમુખ', name: 'મનીષભાઈ જોષી' },
                     { position: 'મહામંત્રી', name: 'રાજેન્દ્રભાઈ પંડયા' },
                     { position: 'સહમંત્રી', name: 'ધર્મેશભાઈ પુરોહિત' },
+                    { position: 'ખજાનચી', name: 'બિપિનચંદ્ર ભટ્ટ' },
                     { position: 'કારોબારી', name: 'અશોકભાઇ ઠાકર' },
                     { position: 'કારોબારી', name: 'યોગેશભાઇ ભટ્ટ' },
                     { position: 'કારોબારી', name: 'ઘનશ્યામભાઈ જોષી' },
