@@ -37,7 +37,7 @@ p {
 
 .img {
 	width: auto;
-	height: 100%;
+	/* height: 100%; */
 	/* object-fit: cover; */
 }
 
@@ -4952,12 +4952,6 @@ body {
 	align-items: center;
 	width: 100%;
 	line-height: 30px;
-}
-
-.main-img {
-	box-sizing: border-box;
-	background-size: cover;
-	border-radius: 20%;
 }
 
 .info-slider {

@@ -110,9 +110,9 @@ function enterFullScreen(typeId) {
 		=================================*/
 		$(".hero-slider").owlCarousel({
 			loop: true,
-			autoplay: true,
+			autoplay: false,
 			smartSpeed: 1000,
-			autoplayTimeout: 3500,
+			autoplayTimeout: 8000,
 			singleItem: true,
 			autoplayHoverPause: true,
 			items: 1,
@@ -127,8 +127,8 @@ function enterFullScreen(typeId) {
 		$('.testimonial-slider').owlCarousel({
 			items: 3,
 			autoplay: true,
-			autoplayTimeout: 4500,
-			smartSpeed: 300,
+			autoplayTimeout: 5000,
+			smartSpeed: 1000,
 			autoplayHoverPause: true,
 			loop: true,
 			merge: true,
@@ -158,9 +158,9 @@ function enterFullScreen(typeId) {
 		=================================*/
 		$('.portfolio-slider').owlCarousel({
 			autoplay: true,
-			autoplayTimeout: 4000,
+			autoplayTimeout: 8000,
 			margin: 15,
-			smartSpeed: 300,
+			smartSpeed: 1000,
 			autoplayHoverPause: true,
 			loop: true,
 			nav: true,
@@ -195,9 +195,9 @@ function enterFullScreen(typeId) {
 		$('.clients-slider').owlCarousel({
 			items: 5,
 			autoplay: true,
-			autoplayTimeout: 3500,
+			autoplayTimeout: 8000,
 			margin: 15,
-			smartSpeed: 400,
+			smartSpeed: 1000,
 			autoplayHoverPause: true,
 			loop: true,
 			nav: false,
@@ -224,8 +224,8 @@ function enterFullScreen(typeId) {
 		$('.pf-details-slider').owlCarousel({
 			items: 1,
 			autoplay: false,
-			autoplayTimeout: 5000,
-			smartSpeed: 400,
+			autoplayTimeout: 8000,
+			smartSpeed: 1000,
 			autoplayHoverPause: true,
 			loop: true,
 			merge: true,

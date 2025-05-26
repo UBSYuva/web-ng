@@ -59,11 +59,20 @@
     <section class="slider pb-1">
         <div class="hero-slider">
             <!-- Start Single Slider -->
-            <div *ngFor="let item of data.mainSlider" class="single-slider">
+
+            <div class="single-slider" *ngFor="let item of data.mainSlider" class="single-slider">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-6 d-flex">
-                            <div class="text">
+                    <ng-container *ngIf="!!item.img">
+                        <div class="row d-flex" >
+                            <h3 class="text-center p-2 w-100 justify-content-center">{{item.header}}</h3>
+                            <div class="col-12 d-flex w-100 justify-content-center">
+                                <img class="img main-img" [src]="item.img" />
+                            </div>
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf="!item.img">
+                        <div class="row">
+                            <div class="col-12 pt-3">
                                 <h3>{{item.header}}</h3>
                                 <h5 class="pt-2" *ngIf="item?.subHeader">{{item?.subHeader}}</h5>
                                 <div class="info-slider">
@@ -72,10 +81,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 main-img">
-                            <img class="img" [src]="item.img" />
-                        </div>
-                    </div>
+                    </ng-container>
                 </div>
             </div>
         </div>

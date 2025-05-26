@@ -20,3 +20,10 @@
 .member-padding {
     padding-top: 30px !important
 }
+
+.main-img {
+	box-sizing: border-box;
+	background-size: cover;
+	border-radius: 5%;
+    max-height: 500px;
+}
