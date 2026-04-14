@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap');
 
-:root {
+body {
     /* Base Variables (Default Dark) */
     --bg-main: #0f172a;
     --bg-surface: #1e293b;
     --bg-glass: rgba(15, 23, 42, 0.82);
-    --text-primary: #f8fafc;
+    --text-primary: #f1f5f9;
     --text-muted: #94a3b8;
     --accent-gold: #d4af37;
-    --border-color: rgba(255, 255, 255, 0.1);
-    --shadow-main: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    
-    /* Global Radius */
+    --accent-gold-rgb: 212, 175, 55;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --shadow-main: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
     --radius-lg: 24px;
     --radius-md: 16px;
+
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary) !important;
+    font-family: 'Inter', sans-serif !important;
+    transition: all 0.4s ease;
 }
 
-.light-theme {
+html.light-theme body {
     --bg-main: #f8fafc;
     --bg-surface: #ffffff;
     --bg-glass: rgba(248, 250, 252, 0.85);
     --text-primary: #0f172a;
     --text-muted: #475569;
-    --accent-gold: #b8860b; /* Slightly darker gold for light bg */
+    --accent-gold: #b8860b; 
     --border-color: rgba(0, 0, 0, 0.08);
     --shadow-main: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
 }
@@ -109,10 +113,11 @@ h1, h2, h3, h4, h5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: pointer !important;
     font-size: 1.2rem;
     color: var(--accent-gold);
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2000;
 }
 
 .theme-toggle:hover {

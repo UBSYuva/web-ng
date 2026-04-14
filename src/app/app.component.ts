@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, PLATFORM_ID, Renderer2 } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, Renderer2, HostBinding, ViewEncapsulation } from '@angular/core';
 import { mainData } from './data/main';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 
@@ -6,8 +6,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
   selector: 'app-root',
   templateUrl: './app.component.html',
   imports: [CommonModule],
-  styles: ["body { position:relative }"],
-  styleUrl: './app.component.css',
+  styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
   
@@ -26,7 +25,7 @@ export class AppComponent implements OnInit {
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'light') {
         this.isDarkMode = false;
-        this.renderer.addClass(document.body, 'light-theme');
+        document.body.classList.add('light-theme');
       }
       this.startSlider();
     }
@@ -55,19 +54,14 @@ export class AppComponent implements OnInit {
 
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
-    console.log('Toggling theme. Dark mode:', this.isDarkMode);
+    const root = document.documentElement;
     
-    if (isPlatformBrowser(this.platformId)) {
-      if (this.isDarkMode) {
-        this.renderer.removeClass(document.body, 'light-theme');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        this.renderer.addClass(document.body, 'light-theme');
-        localStorage.setItem('theme', 'light');
-      }
-      
-      // Verify the class state
-      console.log('Body classes:', document.body.className);
+    if (this.isDarkMode) {
+      root.classList.remove('light-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      root.classList.add('light-theme');
+      localStorage.setItem('theme', 'light');
     }
   }
 
